@@ -85,23 +85,34 @@ int main()
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)0);
     glEnableVertexAttribArray(0);
 
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void*)(3 * sizeof(float)));
+    //glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void*)(3 * sizeof(float)));
     //glEnableVertexAttribArray(1);
 
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(2);
+
+    int projLoc, viewLoc, modelLoc;
     glm::mat4 projection = glm::mat4(1.0f);
     projection = glm::perspective(45.0f, 1.0f, 0.1f,100.0f);
+    projLoc = glGetUniformLocation(shader.id, "projection");
 
     glm::mat4 view = glm::mat4(1.0f);
     view = glm::translate(view, glm::vec3(0.0f,0.0f,-2.0f));
+    viewLoc = glGetUniformLocation(shader.id, "view");
 
     glm::mat4 model = glm::mat4(1.0f);
+    model = glm::rotate(model, glm::radians(24.0f), glm::vec3(1.0f,0.0f,0.0f));
+    modelLoc = glGetUniformLocation(shader.id, "model");
+
 
     glUseProgram(shader.id);
-
-    glBindVertexArray(VAO);
+    
+    opg::setMat4(projLoc, projection);
+    opg::setMat4(viewLoc, view);
+    opg::setMat4(modelLoc, model);
 
     while(!glfwWindowShouldClose(window))
     {
@@ -109,7 +120,7 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
         glClearColor(0.2f,0.2f,0.6,1.0f);
 
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
         glfwPollEvents();
         glfwSwapBuffers(window);
     }   

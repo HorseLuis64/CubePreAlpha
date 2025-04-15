@@ -177,30 +177,6 @@ src/Graphics/glfwConf.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.s
 .PHONY : src/Graphics/glfwConf.cpp.s
 
-src/Graphics/main.o: src/Graphics/main.cpp.o
-.PHONY : src/Graphics/main.o
-
-# target to build an object file
-src/Graphics/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o
-.PHONY : src/Graphics/main.cpp.o
-
-src/Graphics/main.i: src/Graphics/main.cpp.i
-.PHONY : src/Graphics/main.i
-
-# target to preprocess a source file
-src/Graphics/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.i
-.PHONY : src/Graphics/main.cpp.i
-
-src/Graphics/main.s: src/Graphics/main.cpp.s
-.PHONY : src/Graphics/main.s
-
-# target to generate assembly for a file
-src/Graphics/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.s
-.PHONY : src/Graphics/main.cpp.s
-
 src/Graphics/openConf.o: src/Graphics/openConf.cpp.o
 .PHONY : src/Graphics/openConf.o
 
@@ -224,6 +200,30 @@ src/Graphics/openConf.s: src/Graphics/openConf.cpp.s
 src/Graphics/openConf.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.s
 .PHONY : src/Graphics/openConf.cpp.s
+
+src/Main/main.o: src/Main/main.cpp.o
+.PHONY : src/Main/main.o
+
+# target to build an object file
+src/Main/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Main/main.cpp.o
+.PHONY : src/Main/main.cpp.o
+
+src/Main/main.i: src/Main/main.cpp.i
+.PHONY : src/Main/main.i
+
+# target to preprocess a source file
+src/Main/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Main/main.cpp.i
+.PHONY : src/Main/main.cpp.i
+
+src/Main/main.s: src/Main/main.cpp.s
+.PHONY : src/Main/main.s
+
+# target to generate assembly for a file
+src/Main/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Main/main.cpp.s
+.PHONY : src/Main/main.cpp.s
 
 src/math/utilMath.o: src/math/utilMath.cpp.o
 .PHONY : src/math/utilMath.o
@@ -288,12 +288,12 @@ help:
 	@echo "... src/Graphics/glfwConf.o"
 	@echo "... src/Graphics/glfwConf.i"
 	@echo "... src/Graphics/glfwConf.s"
-	@echo "... src/Graphics/main.o"
-	@echo "... src/Graphics/main.i"
-	@echo "... src/Graphics/main.s"
 	@echo "... src/Graphics/openConf.o"
 	@echo "... src/Graphics/openConf.i"
 	@echo "... src/Graphics/openConf.s"
+	@echo "... src/Main/main.o"
+	@echo "... src/Main/main.i"
+	@echo "... src/Main/main.s"
 	@echo "... src/math/utilMath.o"
 	@echo "... src/math/utilMath.i"
 	@echo "... src/math/utilMath.s"

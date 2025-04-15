@@ -180,13 +180,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/Graphics/main.cpp",
+			"path" : "src/Graphics/openConf.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/Graphics/openConf.cpp",
+			"path" : "src/Main/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

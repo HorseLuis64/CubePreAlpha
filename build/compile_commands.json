@@ -7,15 +7,15 @@
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
-  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/main.cpp",
-  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/main.cpp",
-  "output": "CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o"
-},
-{
-  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
   "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp",
   "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp",
   "output": "CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Main/main.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o"
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",

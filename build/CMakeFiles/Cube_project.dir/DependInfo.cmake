@@ -10,8 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c" "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o" "gcc" "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o.d"
-  "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/main.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o.d"
+  "/home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp" "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/math/utilMath.cpp" "CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/mesh/meshes.cpp" "CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o.d"
   )

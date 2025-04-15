@@ -1,5 +1,5 @@
-CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o: \
- /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp \
+CMakeFiles/Cube_project.dir/src/Main/main.cpp.o: \
+ /home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp \
  /usr/include/stdc-predef.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/openConf.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glfwConf.h \

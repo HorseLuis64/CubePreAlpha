@@ -13,10 +13,10 @@
 #include <math/utilMath.h>
 namespace opg
 {
-	void UpdSetInt(unsigned int program, const char* value, int newValue);
-	void UpdSetMat4(unsigned int program, const char* value, glm::mat4 newValue);
-	void UpdSetFloat(unsigned int program, const char* value, int newValue);
-	void UpdSetVec3(unsigned int program, const char* value, glm::vec3 newValue);
+	void setInt(int &loc,  int &newValue);
+	void setMat4(int loc, glm::mat4 &newValue);
+	void setFloat(int loc, int &newValue);
+	void setVec3(int loc, glm::vec3& newValue);
 }
 #endif
 
