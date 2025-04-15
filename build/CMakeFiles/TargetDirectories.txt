@@ -1,0 +1,3 @@
+/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles/Cube_project.dir
+/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles/edit_cache.dir
+/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles/rebuild_cache.dir

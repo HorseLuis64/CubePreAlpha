@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/main.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/main.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/math/utilMath.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/math/utilMath.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/mesh/meshes.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/mesh/meshes.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/gcc  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/include/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/glad.c",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/include/glad.c",
+  "output": "CMakeFiles/Cube_project.dir/include/glad.c.o"
+}
+]
