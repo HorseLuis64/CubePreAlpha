@@ -1,4 +1,4 @@
-#include <glfwConf.h>
+#include <graphics/glfwConf.h>
 	
 namespace glf
 {

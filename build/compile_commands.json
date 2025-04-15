@@ -31,8 +31,8 @@
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
-  "command": "/usr/bin/gcc  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/include/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/glad.c",
-  "file": "/home/horseluis/HorseDev/CubePreAlpha/include/glad.c",
-  "output": "CMakeFiles/Cube_project.dir/include/glad.c.o"
+  "command": "/usr/bin/gcc  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/include/graphics/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c",
+  "output": "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o"
 }
 ]

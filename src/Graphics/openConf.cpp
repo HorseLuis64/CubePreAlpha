@@ -1,4 +1,4 @@
-#include "openConf.h"
+#include <graphics/openConf.h>
 
 #define UPD_UNIFORMS
 namespace opg

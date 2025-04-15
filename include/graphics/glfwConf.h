@@ -1,5 +1,5 @@
 #pragma once
-#include<glad.h>
+#include<graphics/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 

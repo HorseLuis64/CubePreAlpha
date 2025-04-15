@@ -139,19 +139,19 @@ CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/horseluis/HorseDev/CubePreAlpha/src/mesh/meshes.cpp -o CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.s
 
-CMakeFiles/Cube_project.dir/include/glad.c.o: CMakeFiles/Cube_project.dir/flags.make
-CMakeFiles/Cube_project.dir/include/glad.c.o: /home/horseluis/HorseDev/CubePreAlpha/include/glad.c
-CMakeFiles/Cube_project.dir/include/glad.c.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Cube_project.dir/include/glad.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/include/glad.c.o -MF CMakeFiles/Cube_project.dir/include/glad.c.o.d -o CMakeFiles/Cube_project.dir/include/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/glad.c
+CMakeFiles/Cube_project.dir/include/graphics/glad.c.o: CMakeFiles/Cube_project.dir/flags.make
+CMakeFiles/Cube_project.dir/include/graphics/glad.c.o: /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c
+CMakeFiles/Cube_project.dir/include/graphics/glad.c.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Cube_project.dir/include/graphics/glad.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/include/graphics/glad.c.o -MF CMakeFiles/Cube_project.dir/include/graphics/glad.c.o.d -o CMakeFiles/Cube_project.dir/include/graphics/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c
 
-CMakeFiles/Cube_project.dir/include/glad.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Cube_project.dir/include/glad.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/horseluis/HorseDev/CubePreAlpha/include/glad.c > CMakeFiles/Cube_project.dir/include/glad.c.i
+CMakeFiles/Cube_project.dir/include/graphics/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Cube_project.dir/include/graphics/glad.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c > CMakeFiles/Cube_project.dir/include/graphics/glad.c.i
 
-CMakeFiles/Cube_project.dir/include/glad.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Cube_project.dir/include/glad.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/horseluis/HorseDev/CubePreAlpha/include/glad.c -o CMakeFiles/Cube_project.dir/include/glad.c.s
+CMakeFiles/Cube_project.dir/include/graphics/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Cube_project.dir/include/graphics/glad.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c -o CMakeFiles/Cube_project.dir/include/graphics/glad.c.s
 
 # Object files for target Cube_project
 Cube_project_OBJECTS = \
@@ -160,7 +160,7 @@ Cube_project_OBJECTS = \
 "CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o" \
 "CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o" \
 "CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o" \
-"CMakeFiles/Cube_project.dir/include/glad.c.o"
+"CMakeFiles/Cube_project.dir/include/graphics/glad.c.o"
 
 # External object files for target Cube_project
 Cube_project_EXTERNAL_OBJECTS =
@@ -170,7 +170,7 @@ Cube_project: CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o
-Cube_project: CMakeFiles/Cube_project.dir/include/glad.c.o
+Cube_project: CMakeFiles/Cube_project.dir/include/graphics/glad.c.o
 Cube_project: CMakeFiles/Cube_project.dir/build.make
 Cube_project: /usr/lib/x86_64-linux-gnu/libGLX.so
 Cube_project: /usr/lib/x86_64-linux-gnu/libOpenGL.so

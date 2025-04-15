@@ -129,29 +129,29 @@ Cube_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/build
 .PHONY : Cube_project/fast
 
-include/glad.o: include/glad.c.o
-.PHONY : include/glad.o
+include/graphics/glad.o: include/graphics/glad.c.o
+.PHONY : include/graphics/glad.o
 
 # target to build an object file
-include/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/glad.c.o
-.PHONY : include/glad.c.o
+include/graphics/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/graphics/glad.c.o
+.PHONY : include/graphics/glad.c.o
 
-include/glad.i: include/glad.c.i
-.PHONY : include/glad.i
+include/graphics/glad.i: include/graphics/glad.c.i
+.PHONY : include/graphics/glad.i
 
 # target to preprocess a source file
-include/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/glad.c.i
-.PHONY : include/glad.c.i
+include/graphics/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/graphics/glad.c.i
+.PHONY : include/graphics/glad.c.i
 
-include/glad.s: include/glad.c.s
-.PHONY : include/glad.s
+include/graphics/glad.s: include/graphics/glad.c.s
+.PHONY : include/graphics/glad.s
 
 # target to generate assembly for a file
-include/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/glad.c.s
-.PHONY : include/glad.c.s
+include/graphics/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/graphics/glad.c.s
+.PHONY : include/graphics/glad.c.s
 
 src/Graphics/glfwConf.o: src/Graphics/glfwConf.cpp.o
 .PHONY : src/Graphics/glfwConf.o
@@ -282,9 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Cube_project"
-	@echo "... include/glad.o"
-	@echo "... include/glad.i"
-	@echo "... include/glad.s"
+	@echo "... include/graphics/glad.o"
+	@echo "... include/graphics/glad.i"
+	@echo "... include/graphics/glad.s"
 	@echo "... src/Graphics/glfwConf.o"
 	@echo "... src/Graphics/glfwConf.i"
 	@echo "... src/Graphics/glfwConf.s"

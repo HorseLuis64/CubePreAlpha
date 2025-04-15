@@ -1,9 +1,9 @@
 CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o: \
  /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp \
  /usr/include/stdc-predef.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/glfwConf.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/glad.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/khrplatform.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glfwConf.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

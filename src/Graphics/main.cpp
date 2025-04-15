@@ -1,9 +1,9 @@
 #define UPD_UNIFORMS
-#include<glfwConf.h>
-#include <openConf.h>
+
+#include <graphics/openConf.h>
 
 #define UPD_UNIFORMS
-#include <utilMath.h>
+#include <math/utilMath.h>
 
 const char* vertexPath = "/home/horseluis/HorseDev/CubePreAlpha/src/shaders/vertexShader.vs";
 //const char* vPath = vertexPath.c_str();

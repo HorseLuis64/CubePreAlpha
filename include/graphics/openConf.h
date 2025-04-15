@@ -2,7 +2,7 @@
 #define OPG_CONF
 
 
-#include <glfwConf.h>
+#include <graphics/glfwConf.h>
 #include<iostream>
 #include <fstream>
 #include <sstream>
@@ -10,7 +10,7 @@
 
 #ifdef UPD_UNIFORMS
 #define MATX_CALC
-#include <utilMath.h>
+#include <math/utilMath.h>
 namespace opg
 {
 	void UpdSetInt(unsigned int program, const char* value, int newValue);

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/horseluis/HorseDev/CubePreAlpha/include/glad.c" "CMakeFiles/Cube_project.dir/include/glad.c.o" "gcc" "CMakeFiles/Cube_project.dir/include/glad.c.o.d"
+  "/home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c" "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o" "gcc" "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/main.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o.d"

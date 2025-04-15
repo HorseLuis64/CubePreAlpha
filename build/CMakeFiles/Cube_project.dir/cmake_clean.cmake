@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Cube_project.dir/include/glad.c.o"
-  "CMakeFiles/Cube_project.dir/include/glad.c.o.d"
+  "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o"
+  "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o.d"
   "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o"
   "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o.d"
   "CMakeFiles/Cube_project.dir/src/Graphics/main.cpp.o"
