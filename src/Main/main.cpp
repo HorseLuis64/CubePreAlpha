@@ -5,6 +5,7 @@
 #include <math/utilMath.h>
 #include<graphics/texture.h>
 #include<graphics/buffer.h>
+#include<mesh/meshes.h>
 const char* vertexPath = "/home/horseluis/HorseDev/CubePreAlpha/src/shaders/vertexShader.vs";
 //const char* vPath = vertexPath.c_str();
 
@@ -95,9 +96,12 @@ int main()
 
     texture.addTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 0, GL_RGB, GL_UNSIGNED_BYTE);
    
+    msh::Cube cube;
+    msh::Pyramid pyramid;
+
     bf::Buffer buffers;
-    buffers.addVBO(vertices, sizeof(vertices), GL_STATIC_DRAW);   
-    buffers.addEBO(indices, sizeof(indices), GL_STATIC_DRAW);
+    buffers.addVBO(pyramid.vertices, sizeof(cube.vertices), GL_DYNAMIC_DRAW);   
+    buffers.addEBO(pyramid.indices, sizeof(cube.indices), GL_DYNAMIC_DRAW);
 
     buffers.addVAttribP(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)0);
     buffers.addVAttribP(2, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)(3 * sizeof(float)));
@@ -132,7 +136,7 @@ int main()
         model = glm::translate(model, glm::vec3(0.0f,0.0f,0.0f));
         opg::setMat4(modelLoc, model);
 
-        glDrawArrays(GL_TRIANGLES, 0, 36);
+        glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 
         for(int i = 0; i < 10; i++)
         {
@@ -142,7 +146,7 @@ int main()
             model = glm::translate(model, cubePositions[i]);
             model = glm::rotate(model, glm::radians(20.0f * i), glm::vec3(1.0f,1.0f,1.0f));
             opg::setMat4(modelLoc, model);
-            glDrawArrays(GL_TRIANGLES, 0, 36);
+            glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
         }
         view = glm::mat4(1.0f);
         view = glm::translate(view, glm::vec3(0.0f,0.0f,-5.0f));
