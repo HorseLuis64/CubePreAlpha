@@ -19,6 +19,8 @@ namespace opg
 	{
 		glUniform3f(loc, newValue.x, newValue.y, newValue.z);
 	}
+
+	
 }
 
 
@@ -86,6 +88,13 @@ namespace opg
 		}
 	}
 
+	int Shader::getLoc(unsigned int program, const char* name)
+	{
+		return glGetUniformLocation(program, name);
+	}
+
+
+	///NOT MINEEEEE
 
 
 

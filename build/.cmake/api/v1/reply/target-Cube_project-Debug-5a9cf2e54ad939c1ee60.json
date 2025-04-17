@@ -94,7 +94,9 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7,
+				8
 			]
 		},
 		{
@@ -114,7 +116,7 @@
 			"language" : "C",
 			"sourceIndexes" : 
 			[
-				7
+				9
 			]
 		}
 	],
@@ -169,7 +171,9 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8,
+				9
 			]
 		}
 	],
@@ -179,6 +183,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Graphics/buffer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Graphics/camera.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -203,6 +213,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Main/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/math/transform.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

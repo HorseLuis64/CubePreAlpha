@@ -177,6 +177,30 @@ src/Graphics/buffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.s
 .PHONY : src/Graphics/buffer.cpp.s
 
+src/Graphics/camera.o: src/Graphics/camera.cpp.o
+.PHONY : src/Graphics/camera.o
+
+# target to build an object file
+src/Graphics/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.o
+.PHONY : src/Graphics/camera.cpp.o
+
+src/Graphics/camera.i: src/Graphics/camera.cpp.i
+.PHONY : src/Graphics/camera.i
+
+# target to preprocess a source file
+src/Graphics/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.i
+.PHONY : src/Graphics/camera.cpp.i
+
+src/Graphics/camera.s: src/Graphics/camera.cpp.s
+.PHONY : src/Graphics/camera.s
+
+# target to generate assembly for a file
+src/Graphics/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.s
+.PHONY : src/Graphics/camera.cpp.s
+
 src/Graphics/glfwConf.o: src/Graphics/glfwConf.cpp.o
 .PHONY : src/Graphics/glfwConf.o
 
@@ -273,6 +297,30 @@ src/Main/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Main/main.cpp.s
 .PHONY : src/Main/main.cpp.s
 
+src/math/transform.o: src/math/transform.cpp.o
+.PHONY : src/math/transform.o
+
+# target to build an object file
+src/math/transform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/math/transform.cpp.o
+.PHONY : src/math/transform.cpp.o
+
+src/math/transform.i: src/math/transform.cpp.i
+.PHONY : src/math/transform.i
+
+# target to preprocess a source file
+src/math/transform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/math/transform.cpp.i
+.PHONY : src/math/transform.cpp.i
+
+src/math/transform.s: src/math/transform.cpp.s
+.PHONY : src/math/transform.s
+
+# target to generate assembly for a file
+src/math/transform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/math/transform.cpp.s
+.PHONY : src/math/transform.cpp.s
+
 src/math/utilMath.o: src/math/utilMath.cpp.o
 .PHONY : src/math/utilMath.o
 
@@ -336,6 +384,9 @@ help:
 	@echo "... src/Graphics/buffer.o"
 	@echo "... src/Graphics/buffer.i"
 	@echo "... src/Graphics/buffer.s"
+	@echo "... src/Graphics/camera.o"
+	@echo "... src/Graphics/camera.i"
+	@echo "... src/Graphics/camera.s"
 	@echo "... src/Graphics/glfwConf.o"
 	@echo "... src/Graphics/glfwConf.i"
 	@echo "... src/Graphics/glfwConf.s"
@@ -348,6 +399,9 @@ help:
 	@echo "... src/Main/main.o"
 	@echo "... src/Main/main.i"
 	@echo "... src/Main/main.s"
+	@echo "... src/math/transform.o"
+	@echo "... src/math/transform.i"
+	@echo "... src/math/transform.s"
 	@echo "... src/math/utilMath.o"
 	@echo "... src/math/utilMath.i"
 	@echo "... src/math/utilMath.s"

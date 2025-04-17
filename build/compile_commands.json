@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/camera.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/camera.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
   "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp",
   "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp",
   "output": "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o"
@@ -28,6 +34,12 @@
   "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Main/main.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp",
   "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp",
   "output": "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/math/transform.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/math/transform.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/math/transform.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/math/transform.cpp.o"
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",

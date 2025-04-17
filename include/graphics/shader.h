@@ -9,7 +9,7 @@
 #include <string>
 
 #ifdef UPD_UNIFORMS
-#define MATX_CALC
+#define SIMPLE_MATX_CALC
 #include <math/utilMath.h>
 namespace opg
 {
@@ -17,6 +17,7 @@ namespace opg
 	void setMat4(int loc, glm::mat4 &newValue);
 	void setFloat(int loc, int &newValue);
 	void setVec3(int loc, glm::vec3& newValue);
+	
 }
 #endif
 
@@ -33,6 +34,7 @@ namespace opg
 			Shader(const char* vpath, const char* fpath, bool autoDelete = true);
 			~Shader();
 			void deleteShaders(unsigned int &shader1, unsigned int &shader2);
+			int getLoc(unsigned int program, const char* name);
 			unsigned int id;
 		private:
 			unsigned int vShader;
@@ -42,6 +44,7 @@ namespace opg
 
 			void createShaders(bool autoDelete);
 			void createProgram(unsigned int &shader1, unsigned int &shader2);
+			
 	};
 
 	std::string loadShaderSource(const char* filePath);
