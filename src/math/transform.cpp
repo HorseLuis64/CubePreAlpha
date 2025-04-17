@@ -2,15 +2,23 @@
 
 namespace tf
 {
-    Transform::Transform(float fov, float aspect, float zNear, float zFar, glm::mat4 view)
+    Transform::Transform()
     {
         
-        projection = glm::mat4(1.0f);
-        projection = glm::perspective(fov, aspect, zNear, zFar);
-        this->view = view;
         model = glm::mat4(1.0f);
         
     }
+
+    glm::mat4 Transform::projection = glm::mat4(1.0f);
+    glm::mat4 Transform::view = glm::mat4(1.0f);
+
+    void Transform::setProjection(float fov, float aspect, float zNear, float zFar, glm::mat4 view1)
+    {
+        projection = glm::mat4(1.0f);
+        projection = glm::perspective(fov, aspect, zNear, zFar);
+        view = view1;
+    }
+
 
     Transform::~Transform(){}
 
@@ -29,6 +37,10 @@ namespace tf
     void Transform::translate(glm::vec3 trans)
     {
         model = glm::translate(model, trans);
+    }
+    void Transform::rotate(float angle, glm::vec3 axis)
+    {
+        model = glm::rotate(model, glm::radians(angle), axis);
     }
     void Transform::setView(glm::mat4 camView)
     {

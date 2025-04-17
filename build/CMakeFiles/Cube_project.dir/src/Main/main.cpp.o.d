@@ -395,4 +395,6 @@ CMakeFiles/Cube_project.dir/src/Main/main.cpp.o: \
  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/stb_image.h \
  /usr/include/c++/13/stdlib.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/buffer.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/mesh/meshes.h
+ /home/horseluis/HorseDev/CubePreAlpha/include/mesh/meshes.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/camera.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/math/transform.h

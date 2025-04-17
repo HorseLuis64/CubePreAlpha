@@ -5,14 +5,21 @@ namespace tf
 {
     class Transform
     {
+        
+
         private:
             
         public:
 
-            glm::mat4 view;
-            glm::mat4 projection;
+            static glm::mat4 projection;
+            static glm::mat4 view;
+            static void setProjection(float fov, float aspect, float zNear, float zFar, glm::mat4 view1);
+            
+            
+            
+            
             glm::mat4 model;
-            Transform(float fov, float aspect, float zNear, float zFar, glm::mat4 view);
+            Transform ();
             ~Transform();
 
             void transform(glm::mat4 trans);

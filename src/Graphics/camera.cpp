@@ -5,7 +5,7 @@ namespace cm
     Camera::Camera(glm::vec3 initPosition, bool setAutoTarget)
     {
         camPos = initPosition;
-
+        view = glm::mat4(1.0f);
         if(setAutoTarget)
         {
             setTarget();

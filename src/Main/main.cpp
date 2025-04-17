@@ -6,6 +6,8 @@
 #include<graphics/texture.h>
 #include<graphics/buffer.h>
 #include<mesh/meshes.h>
+#include<graphics/camera.h>
+#include<math/transform.h>
 const char* vertexPath = "/home/horseluis/HorseDev/CubePreAlpha/src/shaders/vertexShader.vs";
 //const char* vPath = vertexPath.c_str();
 
@@ -55,24 +57,30 @@ int main()
     buffers.addVAttribP(2, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)(3 * sizeof(float)));
 
     int projLoc, viewLoc, modelLoc;
-    glm::mat4 projection = glm::mat4(1.0f);
-    projection = glm::perspective(45.0f, 1.0f, 0.1f,100.0f);
-    projLoc = glGetUniformLocation(shader.id, "projection");
 
-    glm::mat4 view = glm::mat4(1.0f);
-    view = glm::translate(view, glm::vec3(0.0f,0.0f,-5.0f));
-    viewLoc = glGetUniformLocation(shader.id, "view");
+    cm::Camera camera(glm::vec3(0.0f,0.0f,3.0f));
+    camera.updLookAt(camera.camPos, camera.target, glm::vec3(0.0f,1.0f,0.0f));
+    viewLoc = shader.getLoc(shader.id, "view");
+    
+    tf::Transform::setProjection(45.0f,1.0f, 0.1f,100.0f, camera.view);
+    tf::Transform transform;
 
-    glm::mat4 model = glm::mat4(1.0f);
-    model = glm::rotate(model, glm::radians(24.0f), glm::vec3(1.0f,0.0f,0.0f));
-    modelLoc = glGetUniformLocation(shader.id, "model");
+    
+    projLoc = shader.getLoc(shader.id, "projection");
+
+    
+    
+    transform.rotate(24.0f,glm::vec3(1.0f,0.0f,0.0f));
+    
+    
+    modelLoc = shader.getLoc(shader.id, "model");
 
 
     glUseProgram(shader.id);
     glEnable(GL_DEPTH_TEST);
-    opg::setMat4(projLoc, projection);
-    opg::setMat4(viewLoc, view);
-    opg::setMat4(modelLoc, model);
+    opg::setMat4(projLoc, tf::Transform::projection);
+    opg::setMat4(viewLoc, camera.view);
+    opg::setMat4(modelLoc, transform.model);
 
     while(!glfwWindowShouldClose(window))
     {
@@ -80,26 +88,27 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glClearColor(0.2f,0.2f,0.6,1.0f);
 
-        model = glm::mat4(1.0f);
-        model = glm::translate(model, glm::vec3(0.0f,0.0f,0.0f));
-        opg::setMat4(modelLoc, model);
+        transform.model = glm::mat4(1.0f);
+        transform.model = glm::translate(transform.model, glm::vec3(0.0f,0.0f,0.0f));
+        opg::setMat4(modelLoc, transform.model);
 
         glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_INT, 0);
 
         for(int i = 0; i < 10; i++)
         {
-            model = glm::mat4(1.0f);
+            transform.model = glm::mat4(1.0f);
             if(i == 0) continue;
 
-            model = glm::translate(model, cubePositions[i]);
-            model = glm::rotate(model, glm::radians(20.0f * i), glm::vec3(1.0f,1.0f,1.0f));
-            opg::setMat4(modelLoc, model);
-            glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+            transform.model = glm::translate(transform.model, cubePositions[i]);
+            transform.model = glm::rotate(transform.model, glm::radians(20.0f * i), glm::vec3(1.0f,1.0f,1.0f));
+            opg::setMat4(modelLoc, transform.model);
+            glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_INT, 0);
         }
-        view = glm::mat4(1.0f);
-        view = glm::translate(view, glm::vec3(0.0f,0.0f,-5.0f));
-        view = glm::rotate(view, (float)glfwGetTime() * glm::radians(90.0f), glm::vec3(1.0f,0.0f,0.0f));
-        opg::setMat4(viewLoc, view);
+        camera.view = glm::mat4(1.0f);
+        camera.updLookAt(glm::vec3(0.0f,0.0f,3.0f), glm::vec3(0.0f,0.0f,0.0f), glm::vec3(0.0f,1.0f,0.0f));
+        
+        
+        opg::setMat4(viewLoc, camera.view);
         glfwPollEvents();
         glfwSwapBuffers(window);
     }   
