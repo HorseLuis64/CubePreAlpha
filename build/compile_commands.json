@@ -1,15 +1,27 @@
 [
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/buffer.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/buffer.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
   "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp",
   "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp",
   "output": "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o"
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
-  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp",
-  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/openConf.cpp",
-  "output": "CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o"
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/shader.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/shader.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/texture.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/texture.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o"
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",

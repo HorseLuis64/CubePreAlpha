@@ -1,5 +1,5 @@
 #define UPD_UNIFORMS
-#include <graphics/openConf.h>
+#include <graphics/shader.h>
 
 namespace opg
 {
@@ -33,9 +33,9 @@ std::string loadShaderSource(const char* filePath);
 namespace opg
 {
 
-	Shader::Shader(const char* vpath, const char* fpath) : vPath(vpath), fPath(fpath)
+	Shader::Shader(const char* vpath, const char* fpath, bool autoDelete) : vPath(vpath), fPath(fpath)
 	{
-		createShaders();
+		createShaders(autoDelete);
 	}
 
 	Shader::~Shader(){};
@@ -47,9 +47,16 @@ namespace opg
 		glAttachShader(id, shader2);
 		glLinkProgram(id);
 		checkProgramLinking(id);
+		glDeleteShader(shader1);
+		glDeleteShader(shader2);
 	}
 
-	void Shader::createShaders()
+	void Shader::deleteShaders(unsigned int &shader1, unsigned int &shader2)
+	{
+		glDeleteShader(shader1);
+		glDeleteShader(shader2);
+	}
+	void Shader::createShaders(bool autoDelete)
 	{
 		std::string s_vSource;
 		std::string s_fSource;
@@ -73,6 +80,10 @@ namespace opg
 		checkShaderCompilation(fShader);
 
 		createProgram(vShader, fShader);
+		if(autoDelete)
+		{
+			deleteShaders(vShader, fShader);
+		}
 	}
 
 

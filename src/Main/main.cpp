@@ -1,10 +1,10 @@
 #define UPD_UNIFORMS
 
-#include <graphics/openConf.h>
 
-#define UPD_UNIFORMS
+#include <graphics/shader.h>
 #include <math/utilMath.h>
-
+#include<graphics/texture.h>
+#include<graphics/buffer.h>
 const char* vertexPath = "/home/horseluis/HorseDev/CubePreAlpha/src/shaders/vertexShader.vs";
 //const char* vPath = vertexPath.c_str();
 
@@ -57,6 +57,19 @@ float vertices[] = {
 };
 
 
+glm::vec3 cubePositions[] = {
+    glm::vec3( 0.0f,  0.0f,  0.0f), 
+    glm::vec3( 2.0f,  5.0f, -15.0f), 
+    glm::vec3(-1.5f, -2.2f, -2.5f),  
+    glm::vec3(-3.8f, -2.0f, -12.3f),  
+    glm::vec3( 2.4f, -0.4f, -3.5f),  
+    glm::vec3(-1.7f,  3.0f, -7.5f),  
+    glm::vec3( 1.3f, -2.0f, -2.5f),  
+    glm::vec3( 1.5f,  2.0f, -2.5f), 
+    glm::vec3( 1.5f,  0.2f, -1.5f), 
+    glm::vec3(-1.3f,  1.0f, -1.5f)  
+};
+
 
 unsigned int indices[] = 
 {
@@ -71,28 +84,23 @@ int main()
 
     opg::Shader shader(vertexPath, fragmentPath);
 
-    unsigned int VAO, VBO, EBO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
-    glGenBuffers(1, &EBO);
+    tx::Texture texture;
+    texture.texParami(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    texture.texParami(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-    glBindVertexArray(VAO);
+    texture.texParami(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    texture.texParami(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_LINEAR);
 
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    texture.createImage("/home/horseluis/HorseDev/CubePreAlpha/assets/textures/man.jpeg");
 
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-    
+    texture.addTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 0, GL_RGB, GL_UNSIGNED_BYTE);
+   
+    bf::Buffer buffers;
+    buffers.addVBO(vertices, sizeof(vertices), GL_STATIC_DRAW);   
+    buffers.addEBO(indices, sizeof(indices), GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)0);
-    glEnableVertexAttribArray(0);
-
-    //glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (void*)(3 * sizeof(float)));
-    //glEnableVertexAttribArray(1);
-
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(2);
+    buffers.addVAttribP(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)0);
+    buffers.addVAttribP(2, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)(3 * sizeof(float)));
 
     int projLoc, viewLoc, modelLoc;
     glm::mat4 projection = glm::mat4(1.0f);
@@ -100,7 +108,7 @@ int main()
     projLoc = glGetUniformLocation(shader.id, "projection");
 
     glm::mat4 view = glm::mat4(1.0f);
-    view = glm::translate(view, glm::vec3(0.0f,0.0f,-2.0f));
+    view = glm::translate(view, glm::vec3(0.0f,0.0f,-5.0f));
     viewLoc = glGetUniformLocation(shader.id, "view");
 
     glm::mat4 model = glm::mat4(1.0f);
@@ -109,7 +117,7 @@ int main()
 
 
     glUseProgram(shader.id);
-    
+    glEnable(GL_DEPTH_TEST);
     opg::setMat4(projLoc, projection);
     opg::setMat4(viewLoc, view);
     opg::setMat4(modelLoc, model);
@@ -117,10 +125,29 @@ int main()
     while(!glfwWindowShouldClose(window))
     {
 
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glClearColor(0.2f,0.2f,0.6,1.0f);
 
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(0.0f,0.0f,0.0f));
+        opg::setMat4(modelLoc, model);
+
         glDrawArrays(GL_TRIANGLES, 0, 36);
+
+        for(int i = 0; i < 10; i++)
+        {
+            model = glm::mat4(1.0f);
+            if(i == 0) continue;
+
+            model = glm::translate(model, cubePositions[i]);
+            model = glm::rotate(model, glm::radians(20.0f * i), glm::vec3(1.0f,1.0f,1.0f));
+            opg::setMat4(modelLoc, model);
+            glDrawArrays(GL_TRIANGLES, 0, 36);
+        }
+        view = glm::mat4(1.0f);
+        view = glm::translate(view, glm::vec3(0.0f,0.0f,-5.0f));
+        view = glm::rotate(view, (float)glfwGetTime() * glm::radians(90.0f), glm::vec3(1.0f,0.0f,0.0f));
+        opg::setMat4(viewLoc, view);
         glfwPollEvents();
         glfwSwapBuffers(window);
     }   

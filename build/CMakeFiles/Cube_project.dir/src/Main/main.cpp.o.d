@@ -1,7 +1,7 @@
 CMakeFiles/Cube_project.dir/src/Main/main.cpp.o: \
  /home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp \
  /usr/include/stdc-predef.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/graphics/openConf.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/shader.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glfwConf.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/khrplatform.h \
@@ -390,4 +390,8 @@ CMakeFiles/Cube_project.dir/src/Main/main.cpp.o: \
  /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/gtc/../gtc/../ext/vector_uint1.hpp \
  /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/gtc/type_ptr.inl
+ /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/gtc/type_ptr.inl \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/texture.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/stb_image.h \
+ /usr/include/c++/13/stdlib.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/buffer.h

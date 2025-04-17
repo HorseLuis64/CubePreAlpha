@@ -153,6 +153,30 @@ include/graphics/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/graphics/glad.c.s
 .PHONY : include/graphics/glad.c.s
 
+src/Graphics/buffer.o: src/Graphics/buffer.cpp.o
+.PHONY : src/Graphics/buffer.o
+
+# target to build an object file
+src/Graphics/buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.o
+.PHONY : src/Graphics/buffer.cpp.o
+
+src/Graphics/buffer.i: src/Graphics/buffer.cpp.i
+.PHONY : src/Graphics/buffer.i
+
+# target to preprocess a source file
+src/Graphics/buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.i
+.PHONY : src/Graphics/buffer.cpp.i
+
+src/Graphics/buffer.s: src/Graphics/buffer.cpp.s
+.PHONY : src/Graphics/buffer.s
+
+# target to generate assembly for a file
+src/Graphics/buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.s
+.PHONY : src/Graphics/buffer.cpp.s
+
 src/Graphics/glfwConf.o: src/Graphics/glfwConf.cpp.o
 .PHONY : src/Graphics/glfwConf.o
 
@@ -177,29 +201,53 @@ src/Graphics/glfwConf.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.s
 .PHONY : src/Graphics/glfwConf.cpp.s
 
-src/Graphics/openConf.o: src/Graphics/openConf.cpp.o
-.PHONY : src/Graphics/openConf.o
+src/Graphics/shader.o: src/Graphics/shader.cpp.o
+.PHONY : src/Graphics/shader.o
 
 # target to build an object file
-src/Graphics/openConf.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.o
-.PHONY : src/Graphics/openConf.cpp.o
+src/Graphics/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.o
+.PHONY : src/Graphics/shader.cpp.o
 
-src/Graphics/openConf.i: src/Graphics/openConf.cpp.i
-.PHONY : src/Graphics/openConf.i
+src/Graphics/shader.i: src/Graphics/shader.cpp.i
+.PHONY : src/Graphics/shader.i
 
 # target to preprocess a source file
-src/Graphics/openConf.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.i
-.PHONY : src/Graphics/openConf.cpp.i
+src/Graphics/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.i
+.PHONY : src/Graphics/shader.cpp.i
 
-src/Graphics/openConf.s: src/Graphics/openConf.cpp.s
-.PHONY : src/Graphics/openConf.s
+src/Graphics/shader.s: src/Graphics/shader.cpp.s
+.PHONY : src/Graphics/shader.s
 
 # target to generate assembly for a file
-src/Graphics/openConf.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/openConf.cpp.s
-.PHONY : src/Graphics/openConf.cpp.s
+src/Graphics/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.s
+.PHONY : src/Graphics/shader.cpp.s
+
+src/Graphics/texture.o: src/Graphics/texture.cpp.o
+.PHONY : src/Graphics/texture.o
+
+# target to build an object file
+src/Graphics/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o
+.PHONY : src/Graphics/texture.cpp.o
+
+src/Graphics/texture.i: src/Graphics/texture.cpp.i
+.PHONY : src/Graphics/texture.i
+
+# target to preprocess a source file
+src/Graphics/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.i
+.PHONY : src/Graphics/texture.cpp.i
+
+src/Graphics/texture.s: src/Graphics/texture.cpp.s
+.PHONY : src/Graphics/texture.s
+
+# target to generate assembly for a file
+src/Graphics/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.s
+.PHONY : src/Graphics/texture.cpp.s
 
 src/Main/main.o: src/Main/main.cpp.o
 .PHONY : src/Main/main.o
@@ -285,12 +333,18 @@ help:
 	@echo "... include/graphics/glad.o"
 	@echo "... include/graphics/glad.i"
 	@echo "... include/graphics/glad.s"
+	@echo "... src/Graphics/buffer.o"
+	@echo "... src/Graphics/buffer.i"
+	@echo "... src/Graphics/buffer.s"
 	@echo "... src/Graphics/glfwConf.o"
 	@echo "... src/Graphics/glfwConf.i"
 	@echo "... src/Graphics/glfwConf.s"
-	@echo "... src/Graphics/openConf.o"
-	@echo "... src/Graphics/openConf.i"
-	@echo "... src/Graphics/openConf.s"
+	@echo "... src/Graphics/shader.o"
+	@echo "... src/Graphics/shader.i"
+	@echo "... src/Graphics/shader.s"
+	@echo "... src/Graphics/texture.o"
+	@echo "... src/Graphics/texture.i"
+	@echo "... src/Graphics/texture.s"
 	@echo "... src/Main/main.o"
 	@echo "... src/Main/main.i"
 	@echo "... src/Main/main.s"
