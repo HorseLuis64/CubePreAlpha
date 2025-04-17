@@ -297,4 +297,6 @@ CMakeFiles/Cube_project.dir/src/math/transform.cpp.o: \
  /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/gtc/../gtc/../ext/vector_uint1.hpp \
  /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/gtc/type_ptr.inl
+ /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/gtc/type_ptr.inl \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/khrplatform.h

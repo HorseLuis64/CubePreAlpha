@@ -1628,6 +1628,8 @@ CMakeFiles/Cube_project.dir/src/Main/main.cpp.o: /home/horseluis/HorseDev/CubePr
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/Cube_project.dir/src/math/transform.cpp.o: /home/horseluis/HorseDev/CubePreAlpha/src/math/transform.cpp \
+  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.h \
+  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/khrplatform.h \
   /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/detail/type_mat2x3.hpp \
   /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/detail/type_mat2x3.inl \
   /home/horseluis/HorseDev/CubePreAlpha/include/math/glm/detail/type_mat2x4.hpp \

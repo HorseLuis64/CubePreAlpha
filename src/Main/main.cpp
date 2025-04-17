@@ -81,7 +81,7 @@ int main()
     opg::setMat4(projLoc, tf::Transform::projection);
     opg::setMat4(viewLoc, camera.view);
     opg::setMat4(modelLoc, transform.model);
-
+    glm::vec3 newPos(0.0f,0.0f,0.0f);
     while(!glfwWindowShouldClose(window))
     {
 
@@ -89,7 +89,7 @@ int main()
         glClearColor(0.2f,0.2f,0.6,1.0f);
 
         transform.model = glm::mat4(1.0f);
-        transform.model = glm::translate(transform.model, glm::vec3(0.0f,0.0f,0.0f));
+        transform.translate(newPos);
         opg::setMat4(modelLoc, transform.model);
 
         glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_INT, 0);
@@ -99,13 +99,13 @@ int main()
             transform.model = glm::mat4(1.0f);
             if(i == 0) continue;
 
-            transform.model = glm::translate(transform.model, cubePositions[i]);
-            transform.model = glm::rotate(transform.model, glm::radians(20.0f * i), glm::vec3(1.0f,1.0f,1.0f));
+            transform.transform(cubePositions[i], glm::vec3(0.5f,0.5f,0.5f) * cubePositions[i], 20.0f * i, glm::vec3(1.0f,1.0f,1.0f));
+            
             opg::setMat4(modelLoc, transform.model);
             glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_INT, 0);
         }
-        camera.view = glm::mat4(1.0f);
-        camera.updLookAt(glm::vec3(0.0f,0.0f,3.0f), glm::vec3(0.0f,0.0f,0.0f), glm::vec3(0.0f,1.0f,0.0f));
+        //camera.view = glm::mat4(1.0f);
+        camera.updLookAt(glm::vec3((float)sin(glfwGetTime()) * 10.0f,0.0f,(float)cos(glfwGetTime()) * 10.0f), glm::vec3(0.0f,0.0f,0.0f), glm::vec3(0.0f,1.0f,0.0f));
         
         
         opg::setMat4(viewLoc, camera.view);
