@@ -139,10 +139,24 @@ CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/texture.cpp -o CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.s
 
+CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o: CMakeFiles/Cube_project.dir/flags.make
+CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o: /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/uniforms.cpp
+CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o -MF CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o.d -o CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/uniforms.cpp
+
+CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/uniforms.cpp > CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.i
+
+CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/uniforms.cpp -o CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.s
+
 CMakeFiles/Cube_project.dir/src/Main/main.cpp.o: CMakeFiles/Cube_project.dir/flags.make
 CMakeFiles/Cube_project.dir/src/Main/main.cpp.o: /home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp
 CMakeFiles/Cube_project.dir/src/Main/main.cpp.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Cube_project.dir/src/Main/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Cube_project.dir/src/Main/main.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/src/Main/main.cpp.o -MF CMakeFiles/Cube_project.dir/src/Main/main.cpp.o.d -o CMakeFiles/Cube_project.dir/src/Main/main.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp
 
 CMakeFiles/Cube_project.dir/src/Main/main.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/Cube_project.dir/src/Main/main.cpp.s: cmake_force
 CMakeFiles/Cube_project.dir/src/math/transform.cpp.o: CMakeFiles/Cube_project.dir/flags.make
 CMakeFiles/Cube_project.dir/src/math/transform.cpp.o: /home/horseluis/HorseDev/CubePreAlpha/src/math/transform.cpp
 CMakeFiles/Cube_project.dir/src/math/transform.cpp.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Cube_project.dir/src/math/transform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Cube_project.dir/src/math/transform.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/src/math/transform.cpp.o -MF CMakeFiles/Cube_project.dir/src/math/transform.cpp.o.d -o CMakeFiles/Cube_project.dir/src/math/transform.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/math/transform.cpp
 
 CMakeFiles/Cube_project.dir/src/math/transform.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/Cube_project.dir/src/math/transform.cpp.s: cmake_force
 CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o: CMakeFiles/Cube_project.dir/flags.make
 CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o: /home/horseluis/HorseDev/CubePreAlpha/src/math/utilMath.cpp
 CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o -MF CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o.d -o CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/math/utilMath.cpp
 
 CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.s: cmake_force
 CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o: CMakeFiles/Cube_project.dir/flags.make
 CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o: /home/horseluis/HorseDev/CubePreAlpha/src/mesh/meshes.cpp
 CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o -MF CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o.d -o CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/mesh/meshes.cpp
 
 CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.i: cmake_force
@@ -195,19 +209,19 @@ CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/horseluis/HorseDev/CubePreAlpha/src/mesh/meshes.cpp -o CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.s
 
-CMakeFiles/Cube_project.dir/include/graphics/glad.c.o: CMakeFiles/Cube_project.dir/flags.make
-CMakeFiles/Cube_project.dir/include/graphics/glad.c.o: /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c
-CMakeFiles/Cube_project.dir/include/graphics/glad.c.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Cube_project.dir/include/graphics/glad.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/include/graphics/glad.c.o -MF CMakeFiles/Cube_project.dir/include/graphics/glad.c.o.d -o CMakeFiles/Cube_project.dir/include/graphics/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c
+CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o: CMakeFiles/Cube_project.dir/flags.make
+CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o: /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.c
+CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o: CMakeFiles/Cube_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o -MF CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o.d -o CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.c
 
-CMakeFiles/Cube_project.dir/include/graphics/glad.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Cube_project.dir/include/graphics/glad.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c > CMakeFiles/Cube_project.dir/include/graphics/glad.c.i
+CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.c > CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.i
 
-CMakeFiles/Cube_project.dir/include/graphics/glad.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Cube_project.dir/include/graphics/glad.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c -o CMakeFiles/Cube_project.dir/include/graphics/glad.c.s
+CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.c -o CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.s
 
 # Object files for target Cube_project
 Cube_project_OBJECTS = \
@@ -216,11 +230,12 @@ Cube_project_OBJECTS = \
 "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o" \
 "CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.o" \
 "CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o" \
+"CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o" \
 "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o" \
 "CMakeFiles/Cube_project.dir/src/math/transform.cpp.o" \
 "CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o" \
 "CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o" \
-"CMakeFiles/Cube_project.dir/include/graphics/glad.c.o"
+"CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o"
 
 # External object files for target Cube_project
 Cube_project_EXTERNAL_OBJECTS =
@@ -230,16 +245,17 @@ Cube_project: CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o
+Cube_project: CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/Main/main.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/math/transform.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o
 Cube_project: CMakeFiles/Cube_project.dir/src/mesh/meshes.cpp.o
-Cube_project: CMakeFiles/Cube_project.dir/include/graphics/glad.c.o
+Cube_project: CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o
 Cube_project: CMakeFiles/Cube_project.dir/build.make
 Cube_project: /usr/lib/x86_64-linux-gnu/libGLX.so
 Cube_project: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 Cube_project: CMakeFiles/Cube_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Cube_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/horseluis/HorseDev/CubePreAlpha/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Cube_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Cube_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

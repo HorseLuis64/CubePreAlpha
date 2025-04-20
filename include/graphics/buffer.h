@@ -1,6 +1,6 @@
 #pragma once
 
-#include <graphics/glad.h>
+#include <libs/graphics/glad.h>
 namespace bf
 {
     class Buffer

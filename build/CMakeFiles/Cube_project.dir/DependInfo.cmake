@@ -8,12 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c" "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o" "gcc" "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o.d"
+  "/home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.c" "CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o" "gcc" "CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/buffer.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/camera.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/glfwConf.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/glfwConf.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/shader.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/texture.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o.d"
+  "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/uniforms.cpp" "CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp" "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/math/transform.cpp" "CMakeFiles/Cube_project.dir/src/math/transform.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/math/transform.cpp.o.d"
   "/home/horseluis/HorseDev/CubePreAlpha/src/math/utilMath.cpp" "CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o" "gcc" "CMakeFiles/Cube_project.dir/src/math/utilMath.cpp.o.d"

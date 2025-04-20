@@ -1,4 +1,4 @@
-#include<graphics/glad.h>
+#include<libs/graphics/glad.h>
 #define SIMPLE_MATX_CALC
 #include<math/utilMath.h>
 
@@ -25,9 +25,9 @@ namespace cm
 
             void setTarget(glm::vec3 target = glm::vec3(0.0f,0.0f,0.0f));
 
-            void updPosition(glm::vec3 newPosition);
+            void setPosition(glm::vec3 newPosition);
 
-            void updLookAt(glm::vec3 pos, glm::vec3 target , glm::vec3 up);
+            void setLookAt(glm::vec3 pos, glm::vec3 target , glm::vec3 up);
     };
 }
 

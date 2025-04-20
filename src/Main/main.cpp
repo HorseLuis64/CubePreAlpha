@@ -31,7 +31,10 @@ glm::vec3 cubePositions[] = {
 int main()
 { 
 
-    GLFWwindow* window = glf::glfwConfiguration(800, 800);
+    float windowHeight, windowWidth;
+    windowHeight = 800;
+    windowWidth = 800;
+    GLFWwindow* window = glf::glfwConfiguration(windowWidth, windowHeight);
 
     opg::Shader shader(vertexPath, fragmentPath);
 
@@ -50,8 +53,8 @@ int main()
     msh::Pyramid pyramid;
 
     bf::Buffer buffers;
-    buffers.addVBO(pyramid.vertices, sizeof(pyramid.vertices), GL_DYNAMIC_DRAW);   
-    buffers.addEBO(pyramid.indices, sizeof(pyramid.indices), GL_DYNAMIC_DRAW);
+    buffers.addVBO(cube.vertices, sizeof(cube.vertices), GL_DYNAMIC_DRAW);   
+    buffers.addEBO(cube.indices, sizeof(cube.indices), GL_DYNAMIC_DRAW);
 
     buffers.addVAttribP(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)0);
     buffers.addVAttribP(2, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 5, (void*)(3 * sizeof(float)));
@@ -59,10 +62,10 @@ int main()
     int projLoc, viewLoc, modelLoc;
 
     cm::Camera camera(glm::vec3(0.0f,0.0f,3.0f));
-    camera.updLookAt(camera.camPos, camera.target, glm::vec3(0.0f,1.0f,0.0f));
+    camera.setLookAt(camera.camPos, camera.target, glm::vec3(0.0f,1.0f,0.0f));
     viewLoc = shader.getLoc(shader.id, "view");
     
-    tf::Transform::setProjection(45.0f,1.0f, 0.1f,100.0f, camera.view);
+    tf::Transform::setProjection(45.0f,windowWidth / windowHeight, 0.1f,100.0f, camera.view);
     tf::Transform transform;
 
     
@@ -78,9 +81,9 @@ int main()
 
     glUseProgram(shader.id);
     glEnable(GL_DEPTH_TEST);
-    opg::setMat4(projLoc, tf::Transform::projection);
-    opg::setMat4(viewLoc, camera.view);
-    opg::setMat4(modelLoc, transform.model);
+    uf::setMat4(projLoc, tf::Transform::projection);
+    uf::setMat4(viewLoc, camera.view);
+    uf::setMat4(modelLoc, transform.model);
     glm::vec3 newPos(0.0f,0.0f,0.0f);
     while(!glfwWindowShouldClose(window))
     {
@@ -90,9 +93,9 @@ int main()
 
         transform.model = glm::mat4(1.0f);
         transform.translate(newPos);
-        opg::setMat4(modelLoc, transform.model);
+        uf::setMat4(modelLoc, transform.model);
 
-        glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_INT, 0);
+        glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 
         for(int i = 0; i < 10; i++)
         {
@@ -101,14 +104,14 @@ int main()
 
             transform.transform(cubePositions[i], glm::vec3(0.5f,0.5f,0.5f) * cubePositions[i], 20.0f * i, glm::vec3(1.0f,1.0f,1.0f));
             
-            opg::setMat4(modelLoc, transform.model);
-            glDrawElements(GL_TRIANGLES, 18, GL_UNSIGNED_INT, 0);
+            uf::setMat4(modelLoc, transform.model);
+            glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
         }
         //camera.view = glm::mat4(1.0f);
-        camera.updLookAt(glm::vec3((float)sin(glfwGetTime()) * 10.0f,0.0f,(float)cos(glfwGetTime()) * 10.0f), glm::vec3(0.0f,0.0f,0.0f), glm::vec3(0.0f,1.0f,0.0f));
+        camera.setLookAt(glm::vec3((float)sin(glfwGetTime()) * 10.0f,0.0f,(float)cos(glfwGetTime()) * 10.0f), glm::vec3(0.0f,0.0f,0.0f), glm::vec3(0.0f,1.0f,0.0f));
         
         
-        opg::setMat4(viewLoc, camera.view);
+        uf::setMat4(viewLoc, camera.view);
         glfwPollEvents();
         glfwSwapBuffers(window);
     }   

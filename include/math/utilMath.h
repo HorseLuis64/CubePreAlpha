@@ -3,9 +3,9 @@
 
 #ifdef SIMPLE_MATX_CALC
 
-    #include <math/glm/glm.hpp>
-    #include <math/glm/gtc/matrix_transform.hpp>
-    #include <math/glm/gtc/type_ptr.hpp>
+    #include <libs/math/glm/glm.hpp>
+    #include <libs/math/glm/gtc/matrix_transform.hpp>
+    #include <libs/math/glm/gtc/type_ptr.hpp>
 
 #endif
 

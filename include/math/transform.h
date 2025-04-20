@@ -1,32 +1,43 @@
-#define SIMPLE_MATX_CALC
-#include<math/utilMath.h>
-#include<graphics/glad.h>
+#ifndef TRANSFORM_HEADER
+#define TRANSFORM_HEADER
+
+#define UPD_UNIFORMS
+#include<graphics/uniforms.h>
 namespace tf
 {
     class Transform
     {
         
-        private:
-            int modelLoc;
+        
 
         private:
             static int projLoc;
             static int viewLoc;
             
+        private:
+            int modelLoc;
+
         public:
 
+            static float aspect;
+            static float zNear;
+            static float zFar;
+            static float fov;
+            static bool maximized;
             static glm::mat4 projection;
             static glm::mat4 view;
-            static void setProjection(float fov, float aspect, float zNear, float zFar, glm::mat4 view1);
+
+            static void setProjection(float fov, float aspect, float zNear, float zFar, glm::mat4 &view1);  
+            static void setAspectRatio(float x, float y);          
             
-            
-            
-            
+        public:
+    
             glm::mat4 model;
+
             Transform ();
             ~Transform();
 
-            void setMat4();
+            void setModel();
             void setULocs(int projLoc, int viewLoc, int modelLoc);
 
             void transform(glm::mat4 trans);
@@ -39,3 +50,5 @@ namespace tf
     };
 
 }
+
+#endif

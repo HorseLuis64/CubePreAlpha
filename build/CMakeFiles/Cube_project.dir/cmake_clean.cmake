@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o"
-  "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o.d"
+  "CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o"
+  "CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o.d"
   "CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.o"
   "CMakeFiles/Cube_project.dir/src/Graphics/buffer.cpp.o.d"
   "CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.o"
@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Cube_project.dir/src/Graphics/shader.cpp.o.d"
   "CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o"
   "CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o.d"
+  "CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o"
+  "CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o.d"
   "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o"
   "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o.d"
   "CMakeFiles/Cube_project.dir/src/math/transform.cpp.o"

@@ -2,8 +2,8 @@ CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o: \
  /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/texture.cpp \
  /usr/include/stdc-predef.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/graphics/texture.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/graphics/khrplatform.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,7 +20,7 @@ CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/graphics/stb_image.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/stb_image.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \

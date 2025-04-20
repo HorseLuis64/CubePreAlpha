@@ -18,12 +18,12 @@ namespace cm
         this->target = target;
     }
 
-    void Camera::updPosition(glm::vec3 newPosition)
+    void Camera::setPosition(glm::vec3 newPosition)
     {
         camPos = newPosition;
     }
 
-    void Camera::updLookAt(glm::vec3 pos, glm::vec3 target, glm::vec3 up)
+    void Camera::setLookAt(glm::vec3 pos, glm::vec3 target, glm::vec3 up)
     {
         view = glm::lookAt(pos, target, up);
     }

@@ -1,7 +1,7 @@
-CMakeFiles/Cube_project.dir/src/Graphics/camera.cpp.o: \
- /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/camera.cpp \
+CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o: \
+ /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/uniforms.cpp \
  /usr/include/stdc-predef.h \
- /home/horseluis/HorseDev/CubePreAlpha/include/graphics/camera.h \
+ /home/horseluis/HorseDev/CubePreAlpha/include/graphics/uniforms.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.h \
  /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \

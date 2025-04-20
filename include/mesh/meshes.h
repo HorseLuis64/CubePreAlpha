@@ -74,7 +74,7 @@ namespace msh
             1.0f, 0.0f,  1.0f,  1.0f, 1.0f, // Vértice 2
             -1.0f, 0.0f,  1.0f,  0.0f, 1.0f, // Vértice 3
             // Pico (vértice y UV)
-            0.0f, 1.0f,  0.0f,  0.5f, 0.5f  // Vértice 4 (pico)
+            0.0f, 3.0f,  0.0f,  0.5f, 0.5f  // Vértice 4 (pico)
             };
 
             // Indices for drawing the pyramid using triangles

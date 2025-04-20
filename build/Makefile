@@ -129,29 +129,29 @@ Cube_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/build
 .PHONY : Cube_project/fast
 
-include/graphics/glad.o: include/graphics/glad.c.o
-.PHONY : include/graphics/glad.o
+include/libs/graphics/glad.o: include/libs/graphics/glad.c.o
+.PHONY : include/libs/graphics/glad.o
 
 # target to build an object file
-include/graphics/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/graphics/glad.c.o
-.PHONY : include/graphics/glad.c.o
+include/libs/graphics/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o
+.PHONY : include/libs/graphics/glad.c.o
 
-include/graphics/glad.i: include/graphics/glad.c.i
-.PHONY : include/graphics/glad.i
+include/libs/graphics/glad.i: include/libs/graphics/glad.c.i
+.PHONY : include/libs/graphics/glad.i
 
 # target to preprocess a source file
-include/graphics/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/graphics/glad.c.i
-.PHONY : include/graphics/glad.c.i
+include/libs/graphics/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.i
+.PHONY : include/libs/graphics/glad.c.i
 
-include/graphics/glad.s: include/graphics/glad.c.s
-.PHONY : include/graphics/glad.s
+include/libs/graphics/glad.s: include/libs/graphics/glad.c.s
+.PHONY : include/libs/graphics/glad.s
 
 # target to generate assembly for a file
-include/graphics/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/graphics/glad.c.s
-.PHONY : include/graphics/glad.c.s
+include/libs/graphics/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.s
+.PHONY : include/libs/graphics/glad.c.s
 
 src/Graphics/buffer.o: src/Graphics/buffer.cpp.o
 .PHONY : src/Graphics/buffer.o
@@ -273,6 +273,30 @@ src/Graphics/texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/texture.cpp.s
 .PHONY : src/Graphics/texture.cpp.s
 
+src/Graphics/uniforms.o: src/Graphics/uniforms.cpp.o
+.PHONY : src/Graphics/uniforms.o
+
+# target to build an object file
+src/Graphics/uniforms.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o
+.PHONY : src/Graphics/uniforms.cpp.o
+
+src/Graphics/uniforms.i: src/Graphics/uniforms.cpp.i
+.PHONY : src/Graphics/uniforms.i
+
+# target to preprocess a source file
+src/Graphics/uniforms.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.i
+.PHONY : src/Graphics/uniforms.cpp.i
+
+src/Graphics/uniforms.s: src/Graphics/uniforms.cpp.s
+.PHONY : src/Graphics/uniforms.s
+
+# target to generate assembly for a file
+src/Graphics/uniforms.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Cube_project.dir/build.make CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.s
+.PHONY : src/Graphics/uniforms.cpp.s
+
 src/Main/main.o: src/Main/main.cpp.o
 .PHONY : src/Main/main.o
 
@@ -378,9 +402,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Cube_project"
-	@echo "... include/graphics/glad.o"
-	@echo "... include/graphics/glad.i"
-	@echo "... include/graphics/glad.s"
+	@echo "... include/libs/graphics/glad.o"
+	@echo "... include/libs/graphics/glad.i"
+	@echo "... include/libs/graphics/glad.s"
 	@echo "... src/Graphics/buffer.o"
 	@echo "... src/Graphics/buffer.i"
 	@echo "... src/Graphics/buffer.s"
@@ -396,6 +420,9 @@ help:
 	@echo "... src/Graphics/texture.o"
 	@echo "... src/Graphics/texture.i"
 	@echo "... src/Graphics/texture.s"
+	@echo "... src/Graphics/uniforms.o"
+	@echo "... src/Graphics/uniforms.i"
+	@echo "... src/Graphics/uniforms.s"
 	@echo "... src/Main/main.o"
 	@echo "... src/Main/main.i"
 	@echo "... src/Main/main.s"

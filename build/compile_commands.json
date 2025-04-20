@@ -31,6 +31,12 @@
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
+  "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Graphics/uniforms.cpp",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Graphics/uniforms.cpp",
+  "output": "CMakeFiles/Cube_project.dir/src/Graphics/uniforms.cpp.o"
+},
+{
+  "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
   "command": "/usr/bin/g++  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/src/Main/main.cpp.o -c /home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp",
   "file": "/home/horseluis/HorseDev/CubePreAlpha/src/Main/main.cpp",
   "output": "CMakeFiles/Cube_project.dir/src/Main/main.cpp.o"
@@ -55,8 +61,8 @@
 },
 {
   "directory": "/home/horseluis/HorseDev/CubePreAlpha/build",
-  "command": "/usr/bin/gcc  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/include/graphics/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c",
-  "file": "/home/horseluis/HorseDev/CubePreAlpha/include/graphics/glad.c",
-  "output": "CMakeFiles/Cube_project.dir/include/graphics/glad.c.o"
+  "command": "/usr/bin/gcc  -I/home/horseluis/HorseDev/CubePreAlpha/include -g -o CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o -c /home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.c",
+  "file": "/home/horseluis/HorseDev/CubePreAlpha/include/libs/graphics/glad.c",
+  "output": "CMakeFiles/Cube_project.dir/include/libs/graphics/glad.c.o"
 }
 ]

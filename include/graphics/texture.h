@@ -1,6 +1,6 @@
 #pragma once
-#include<graphics/glad.h>
-#include<graphics/stb_image.h>
+#include<libs/graphics/glad.h>
+#include<libs/graphics/stb_image.h>
 
 namespace tx
 {
