@@ -1,5 +1,4 @@
-#ifndef TRANSFORM_HEADER
-#define TRANSFORM_HEADER
+#pragma once
 
 #define UPD_UNIFORMS
 #include<graphics/uniforms.h>
@@ -51,4 +50,3 @@ namespace tf
 
 }
 
-#endif

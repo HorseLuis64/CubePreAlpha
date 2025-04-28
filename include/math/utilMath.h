@@ -1,12 +1,12 @@
-#ifndef CALCULUS
-#define CALCULUS
+#pragma once
 
-#ifdef SIMPLE_MATX_CALC
+#include <libs/math/glm/glm.hpp>
+#include <libs/math/glm/gtc/matrix_transform.hpp>
+#include <libs/math/glm/gtc/type_ptr.hpp>
 
-    #include <libs/math/glm/glm.hpp>
-    #include <libs/math/glm/gtc/matrix_transform.hpp>
-    #include <libs/math/glm/gtc/type_ptr.hpp>
+
+#ifdef COMPLEX_MATX_CALC
+
 
 #endif
 
-#endif

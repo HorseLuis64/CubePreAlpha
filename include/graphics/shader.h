@@ -1,6 +1,4 @@
-#ifndef OPG_CONF
-#define OPG_CONF
-
+#pragma once
 
 #include <libs/graphics/glfwConf.h>
 #include<graphics/uniforms.h>
@@ -43,4 +41,3 @@ namespace opg
 
 
 
-#endif

@@ -1,7 +1,7 @@
 #pragma once
+#include <iostream>
 #include<libs/graphics/glad.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
 #include <math/transform.h>
 
 namespace glf

@@ -1,7 +1,10 @@
+#pragma once
+
+
 #include<libs/graphics/glad.h>
 
 #ifdef UPD_UNIFORMS
-#define SIMPLE_MATX_CALC
+
 #include <math/utilMath.h>
 
 namespace uf

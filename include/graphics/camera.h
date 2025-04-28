@@ -1,5 +1,7 @@
+#pragma once
+
 #include<libs/graphics/glad.h>
-#define SIMPLE_MATX_CALC
+
 #include<math/utilMath.h>
 
 namespace cm
